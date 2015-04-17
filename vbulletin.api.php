@@ -38,7 +38,7 @@ function grab_page($url, $ref_url = false, $data = false, $login = false){
 	      fclose($handler);
 	  }
 	  // if you need a proxy than change this!
-	  if (true) {
+	  if (false) {
 		  curl_setopt($ch, CURLOPT_HTTPPROXYTUNNEL, TRUE);
 		  curl_setopt($ch, CURLOPT_PROXYTYPE, CURLPROXY_SOCKS5);
 		  curl_setopt($ch, CURLOPT_PROXY, "127.0.0.1:9150");
